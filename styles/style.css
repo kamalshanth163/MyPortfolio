@@ -121,6 +121,8 @@ header .menu-icon{
   background-image: url('../images/me.jpg');
   background-position: center;
   background-size: cover;
+  box-shadow: 10px 10px 20px rgb(143, 143, 143);
+  /* border: 4px solid rgb(221, 221, 221); */
 
 }
 

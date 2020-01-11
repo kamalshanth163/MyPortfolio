@@ -1,6 +1,7 @@
 /* Responsive - Tablets devices */
 @media only screen and (max-width: 1200px){
   .wall{
+    margin-top: 140px;
     height: 400px;
   }
   .wall .title{
@@ -16,6 +17,19 @@
     width: 80px;
     height: auto;
     margin-right: 10px;
+  }
+  .about{
+    margin: 10px auto;
+    margin-top: 80px;
+    width: 80%;
+    height: auto;
+
+  } 
+  .about .detail{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    margin-top: -40px;
   }
   .about .detail h2{
     font-size: 60px;
