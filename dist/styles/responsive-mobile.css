@@ -12,6 +12,7 @@
     width: 50px;
   }
 
+
   .about .about-wrapper{
     display: grid;
     grid-template-columns: 1fr;
@@ -46,12 +47,11 @@
   footer{
     padding: 100px 0px !important;
   }
-  /* footer p{
-    font-size: 12px;
-  } 
-  .social-links{
-    position: relative;
-  } */
+  .contact h2{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+  }
 
 }
 
@@ -114,6 +114,7 @@
 
 
   .wall{
+    margin-top: 100px;
     height: 200px;
   }
   .wall .title{
@@ -129,6 +130,12 @@
   }
   .wall .sub-title img{
     width: 30px;
+  }
+
+
+  .about{
+    margin: 10px auto;
+    margin-top: 60px;
   }
   .about .about-wrapper{
     display: grid;
@@ -146,7 +153,7 @@
     width: 100%;
     height: auto;
     padding: 0px 40px;
-    margin-top: -80px;
+    margin-top: -70px;
   }
   .about .detail h2{
     text-align: center;
@@ -218,7 +225,7 @@
   .about .detail{
     width: 100%;
     height: auto;
-    padding: 0px 40px;
+    padding: 0px 30px;
     margin-top: -80px;
   }
   .about .detail h2{
