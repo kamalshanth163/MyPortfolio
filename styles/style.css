@@ -118,7 +118,7 @@ header .menu-icon{
   width: 100%;
   height: auto;
   background: black;
-  background-image: url('../images/me.jpg');
+  background-image: url('../images/me-dark.JPG');
   background-position: center;
   background-size: cover;
   box-shadow: 10px 10px 20px rgb(143, 143, 143);
@@ -135,12 +135,12 @@ header .menu-icon{
 .about .detail h2{
   font-size: 80px;
   font-family: "century gothic";
-  text-align: left;
+  text-align: justify;
 }
 .about .detail p{
   font-size: 16px;
   padding: 40px 0 40px 0;
-  line-height: 24px;
+  line-height: 34px;
 }
 .about .detail .skills li{
   background: #ddd;
@@ -195,6 +195,7 @@ header .menu-icon{
 }
 
 .project-section h2{
+  color: #111;
   padding: 10px;
   font-size: 16px;
   text-align: left;
@@ -273,6 +274,7 @@ footer p{
 }
 .contact .mail{
   font-size: 14px;
+  color: rgba(255, 255, 255, 0.548);
 }
 
 
