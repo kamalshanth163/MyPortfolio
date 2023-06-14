@@ -175,14 +175,24 @@ header .menu-icon {
     color: #1c1c1c;
   }
   
-  .projects {
-    margin-top: 10px;
+.projects {
+  margin-top: 10px;
   width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+
+.pro-projects {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
 .projects .card {
   border: 0px solid #111;
   padding: 30px;
@@ -214,7 +224,7 @@ header .menu-icon {
   line-height: 24px;
 }
 
-.project-section ul {
+.project-section .project-skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4px;
@@ -222,7 +232,7 @@ header .menu-icon {
   font-size: 12px;
 }
 
-.project-section ul li {
+.project-section .project-skills li {
   background: rgb(216, 216, 216);
   text-align: center;
   display: inline-block;
@@ -230,6 +240,14 @@ header .menu-icon {
   padding: 4px;
   border: none;
   border-radius: 4px;
+}
+
+.project-section .pro-projects .project-skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4px;
+  padding: 10px;
+  font-size: 12px;
 }
 
 footer {
