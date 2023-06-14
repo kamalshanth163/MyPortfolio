@@ -12,18 +12,6 @@
     width: 50px;
   }
 
-/* 
-  .about .about-wrapper{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr;
-  }
-  .about .img{
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    border-radius: 50%;
-  } */
   .about .detail{
     width: 100%;
     height: auto;
