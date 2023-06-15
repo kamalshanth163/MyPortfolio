@@ -189,7 +189,7 @@ header .menu-icon {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
 }
 
@@ -199,17 +199,17 @@ header .menu-icon {
   border-radius: 0px;
   background: rgba(241, 241, 241, 0.459);
   cursor: pointer;
+  border: 1px solid #ececec;
 }
 .projects .card:hover {
   background: rgba(233, 233, 233, 0.459);
 }
 
-.projects .card-pro {
-  width: 100%;
-}
-
 .pro-projects .card-pro {
+  background: rgb(251, 251, 251);
   width: 100%;
+  padding: 60px;
+  border: 1px solid #ececec;
 }
 
 .project-section h2 {
@@ -309,8 +309,26 @@ footer p {
 .pic {
   width: 300px;
   height: 300px;
-  /* border-radius: 50%; */
   position: relative;
   margin: 40px;
   float: right;
+}
+li {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.project-experience {
+  margin: 0px 40px 0px 40px;
+  
+}
+
+.project-skills {
+  margin: 0px 40px 10px 40px;
 }
