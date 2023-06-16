@@ -331,3 +331,13 @@ h3 {
 .pro-projects .project-skills {
   margin: 0px 40px 20px 40px;
 }
+.cv-preview {
+  margin: 20px 0px 100px;
+}
+
+.title-2 {
+  margin: 60px 0px 40px 0px;
+  font-size: 80px;
+  font-family: sans-serif;
+  text-align: left;
+}

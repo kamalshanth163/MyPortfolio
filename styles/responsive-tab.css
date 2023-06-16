@@ -34,7 +34,7 @@
   .about .detail h2{
     font-size: 60px;
   }
-  .project-section .project-title{
+  .project-section .project-title, .title-2{
     font-size: 60px;
   }
   .project-section ul{
@@ -75,7 +75,7 @@
   .about .detail h2{
     font-size: 40px;
   }
-  .project-section .project-title{
+  .project-section .project-title, .title-2{
     font-size: 40px;
   }
   .project-section ul{
