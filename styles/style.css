@@ -133,12 +133,11 @@ header .menu-icon {
   background: #ddd;
 }
 .about .detail .skills-2 li {
-  background: #494949;
+  background: rgb(38, 38, 38);
 }
 
 .about .detail .skills-3 li {
-  background: rgb(86, 37, 192);
-    color: white !important !important;
+  background: #1a1a1a;
 }
 .about .detail .skills li a {
   color: rgb(22, 22, 22);
@@ -195,12 +194,11 @@ header .menu-icon {
 }
 
 .projects .card {
-  border: 0px solid #111;
   padding: 30px;
   border-radius: 0px;
   background: rgba(241, 241, 241, 0.459);
   cursor: pointer;
-  border: 1px solid #ececec;
+  border: 0px solid #ececec;
 }
 .projects .card:hover {
   background: rgba(233, 233, 233, 0.459);
@@ -210,7 +208,7 @@ header .menu-icon {
   background: rgb(251, 251, 251);
   width: 100%;
   padding: 60px;
-  border: 1px solid #ececec;
+  border: 0px solid #ececec;
 }
 
 .project-section h2 {

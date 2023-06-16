@@ -31,7 +31,7 @@
     <h1 class="title">Hello<span>.</span></h1>
     <h2 class="sub-title">
       <label class="iam">I'm a</label><br>
-      <label class="dev-type">Web</label>
+      <label class="dev-type">Full Stack</label>
       Developer
       <span>.</span>
     </h2>
@@ -497,10 +497,14 @@
       <a href="https://github.com/kamalshanth163" target="_black" class="github"><i class="fab fa-github"></i></a>
     </div>
 
-    <p>Designed & Developed by Kamalshanth</p>
+    <!-- <p>Designed & Developed by Kamalshanth</p> -->
+    <p>© <span id="currentYear"></span> Kamalshanth. All Rights Reserved. | Website Designed & Developed By Kamalshanth.</p>
+
   </footer>
 
-
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
 
   <!-- Scripts files -->
   <script src="./scripts/all.min.js"></script>
