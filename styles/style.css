@@ -198,14 +198,14 @@ header .menu-icon {
   border-radius: 0px;
   background: rgba(241, 241, 241, 0.459);
   cursor: pointer;
-  border: 0px solid #ececec;
+  background: rgba(233, 233, 233, 0.459);
 }
 .projects .card:hover {
-  background: rgba(233, 233, 233, 0.459);
+  border: 0px solid #ececec;
 }
 
 .pro-projects .card-pro {
-  background: rgb(251, 251, 251);
+  background: rgba(233, 233, 233, 0.459);
   width: 100%;
   padding: 60px;
   border: 0px solid #ececec;
