@@ -27,8 +27,7 @@ $(document).ready(function () {
   if (savedTheme === 'dark' || savedTheme === 'light') {
     setTheme(savedTheme);
   } else {
-    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setTheme(prefersDark ? 'dark' : 'light');
+    setTheme('light');
   }
 
   themeToggle.on('click', function () {
