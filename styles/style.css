@@ -4,6 +4,8 @@
 
 :root {
   color-scheme: light;
+  --header-height: 88px;
+  --header-gap: 10px;
   --bg: #eef2ff;
   --bg-alt: #f8fafc;
   --surface: rgba(255, 255, 255, 0.76);
@@ -29,6 +31,7 @@ body {
   margin: 0;
   font-family: 'Inter', 'Segoe UI', sans-serif;
   color: var(--text);
+  padding-top: calc(var(--header-height) + var(--header-gap));
   background:
     radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), transparent 34%),
     radial-gradient(circle at top right, rgba(15, 118, 110, 0.14), transparent 28%),
@@ -54,6 +57,7 @@ ol {
 header {
   position: fixed;
   inset: 0 0 auto 0;
+  height: var(--header-height);
   z-index: 1000;
   backdrop-filter: blur(18px);
   background: rgba(248, 250, 252, 0.72);
@@ -62,7 +66,7 @@ header {
 
 header nav {
   width: min(1180px, calc(100% - 48px));
-  min-height: 88px;
+  min-height: var(--header-height);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -138,7 +142,7 @@ footer {
 }
 
 .wall {
-  margin-top: 118px;
+  margin-top: 0;
   min-height: calc(100vh - 138px);
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
@@ -635,7 +639,7 @@ div[id] {
   }
 
   .wall {
-    margin-top: 96px;
+    margin-top: 124px;
     padding: 28px;
     border-radius: 30px;
   }
@@ -1341,8 +1345,13 @@ footer p {
 }
 
 @media only screen and (max-width: 720px) {
+  :root {
+    --header-height: 72px;
+    --header-gap: 20px;
+  }
+
   header {
-    height: 72px;
+    height: var(--header-height);
   }
 
   header nav {
@@ -1350,13 +1359,13 @@ footer p {
   }
 
   header .logo {
-    line-height: 72px;
+    line-height: var(--header-height);
     font-size: 20px;
   }
 
   header .menu-icon {
     display: block;
-    line-height: 72px;
+    line-height: var(--header-height);
     font-size: 14px;
   }
 
