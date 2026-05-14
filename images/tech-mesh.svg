@@ -1,0 +1,93 @@
+<svg width="720" height="720" viewBox="0 0 720 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Full stack technology mesh illustration</title>
+  <desc id="desc">Abstract network of connected nodes and glowing rings representing modern full stack development.</desc>
+  <defs>
+    <linearGradient id="bgPlate" x1="74" y1="62" x2="656" y2="666" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.58" stop-color="#EEF2F7"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="bgGlow" x1="108" y1="92" x2="612" y2="644" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" stop-opacity="0.34"/>
+      <stop offset="0.52" stop-color="#2563EB" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#14B8A6" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="strokeMain" x1="126" y1="140" x2="604" y2="585" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#BFDBFE" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#5EEAD4" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="orbBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(234 190) rotate(90) scale(96)">
+      <stop stop-color="#93C5FD"/>
+      <stop offset="1" stop-color="#2563EB" stop-opacity="0.15"/>
+    </radialGradient>
+    <radialGradient id="orbTeal" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(496 250) rotate(90) scale(84)">
+      <stop stop-color="#99F6E4"/>
+      <stop offset="1" stop-color="#14B8A6" stop-opacity="0.16"/>
+    </radialGradient>
+    <radialGradient id="orbSlate" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(365 438) rotate(90) scale(120)">
+      <stop stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#0F172A" stop-opacity="0.08"/>
+    </radialGradient>
+    <filter id="blurGlow" x="0" y="0" width="720" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="softShadow" x="0" y="0" width="720" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#94A3B8" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <rect width="720" height="720" rx="48" fill="url(#bgPlate)"/>
+  <circle cx="212" cy="184" r="130" fill="url(#orbBlue)" filter="url(#blurGlow)"/>
+  <circle cx="500" cy="246" r="112" fill="url(#orbTeal)" filter="url(#blurGlow)"/>
+  <circle cx="366" cy="454" r="152" fill="url(#orbSlate)" filter="url(#blurGlow)"/>
+
+  <path d="M104 470C174 398 235 365 286 330C347 288 405 210 546 178" stroke="url(#strokeMain)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="1 16" opacity="0.55"/>
+  <path d="M146 208C225 230 279 270 343 330C409 390 465 452 574 538" stroke="url(#strokeMain)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="1 16" opacity="0.42"/>
+  <path d="M146 556C221 492 286 452 348 420C421 382 489 324 602 294" stroke="url(#strokeMain)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="1 16" opacity="0.36"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="150" y="164" width="162" height="116" rx="28" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)"/>
+    <rect x="408" y="168" width="154" height="108" rx="28" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)"/>
+    <rect x="222" y="402" width="276" height="136" rx="34" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.18)"/>
+  </g>
+
+  <g>
+    <circle cx="186" cy="192" r="22" fill="#38BDF8" fill-opacity="0.9"/>
+    <circle cx="234" cy="194" r="16" fill="#E0F2FE" fill-opacity="0.88"/>
+    <circle cx="276" cy="230" r="10" fill="#5EEAD4" fill-opacity="0.9"/>
+    <circle cx="436" cy="206" r="18" fill="#93C5FD" fill-opacity="0.9"/>
+    <circle cx="482" cy="206" r="12" fill="#E0F2FE" fill-opacity="0.82"/>
+    <circle cx="530" cy="236" r="18" fill="#14B8A6" fill-opacity="0.92"/>
+    <circle cx="276" cy="446" r="18" fill="#2563EB" fill-opacity="0.9"/>
+    <circle cx="360" cy="438" r="24" fill="#E0F2FE" fill-opacity="0.86"/>
+    <circle cx="448" cy="456" r="18" fill="#5EEAD4" fill-opacity="0.92"/>
+  </g>
+
+  <g stroke="url(#strokeMain)" stroke-width="2" stroke-linecap="round" opacity="0.95">
+    <path d="M186 192L234 194"/>
+    <path d="M234 194L276 230"/>
+    <path d="M436 206L482 206"/>
+    <path d="M482 206L530 236"/>
+    <path d="M276 446L360 438"/>
+    <path d="M360 438L448 456"/>
+    <path d="M276 230L360 438"/>
+    <path d="M482 206L360 438"/>
+    <path d="M234 194L360 438"/>
+  </g>
+
+  <g fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round">
+    <path d="M168 616H552"/>
+    <path d="M188 638H532" opacity="0.75"/>
+    <path d="M220 660H500" opacity="0.5"/>
+  </g>
+
+  <g>
+    <rect x="182" y="474" width="92" height="14" rx="7" fill="#38BDF8" fill-opacity="0.78"/>
+    <rect x="182" y="498" width="156" height="10" rx="5" fill="#E2E8F0" fill-opacity="0.66"/>
+    <rect x="182" y="516" width="112" height="10" rx="5" fill="#94A3B8" fill-opacity="0.56"/>
+
+    <rect x="352" y="206" width="82" height="12" rx="6" fill="#14B8A6" fill-opacity="0.82"/>
+    <rect x="352" y="226" width="132" height="10" rx="5" fill="#E2E8F0" fill-opacity="0.58"/>
+    <rect x="352" y="244" width="98" height="10" rx="5" fill="#94A3B8" fill-opacity="0.5"/>
+  </g>
+</svg>
