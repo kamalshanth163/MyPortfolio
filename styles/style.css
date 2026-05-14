@@ -1152,6 +1152,36 @@ footer {
   overflow: hidden;
 }
 
+.personal-projects .card0 {
+  grid-column: 1 / -1;
+  padding: clamp(28px, 4vw, 40px);
+  border: 1px solid rgba(125, 211, 252, 0.72);
+  background:
+    radial-gradient(circle at top right, rgba(125, 211, 252, 0.78), transparent 45%),
+    radial-gradient(circle at bottom left, rgba(56, 189, 248, 0.5), transparent 52%),
+    linear-gradient(135deg, rgba(239, 246, 255, 0.97), rgba(224, 242, 254, 0.98));
+  box-shadow:
+    0 14px 34px rgba(56, 189, 248, 0.28),
+    0 0 36px rgba(125, 211, 252, 0.26),
+    0 0 0 1px rgba(186, 230, 253, 0.9) inset;
+}
+
+.personal-projects .card0::before {
+  background: linear-gradient(145deg, rgba(224, 242, 254, 0.9), rgba(186, 230, 253, 0.08) 55%, transparent 78%);
+}
+
+.personal-projects .card0 h2,
+.personal-projects .card0 p,
+.personal-projects .card0 li {
+  color: #0f172a;
+}
+
+.personal-projects .card0 .project-skills li {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(125, 211, 252, 0.82);
+  color: #0f172a;
+}
+
 .projects .card::before,
 .pro-projects .card-pro::before {
   content: '';
