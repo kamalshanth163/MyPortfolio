@@ -560,6 +560,30 @@ footer {
   font-weight: 600;
 }
 
+.contact-social {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.contact-social a {
+  color: rgba(241, 245, 249, 0.92);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border: 1.5px solid rgba(241, 245, 249, 0.5);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact-social a:hover {
+  color: #ffffff;
+  background: rgba(241, 245, 249, 0.1);
+  border-color: rgba(241, 245, 249, 0.92);
+}
+
 footer {
   padding: 28px 0 48px;
   text-align: center;
@@ -1668,6 +1692,17 @@ body.theme-dark .about .detail .skills li a {
 
 body.theme-dark .contact {
   background: linear-gradient(135deg, rgba(2, 6, 23, 0.96), rgba(30, 64, 175, 0.84));
+}
+
+body.theme-dark .contact-social a {
+  color: rgba(226, 232, 240, 0.88);
+  border-color: rgba(226, 232, 240, 0.3);
+}
+
+body.theme-dark .contact-social a:hover {
+  color: #e2e8f0;
+  background: rgba(226, 232, 240, 0.08);
+  border-color: rgba(226, 232, 240, 0.88);
 }
 
 body.theme-dark footer p {

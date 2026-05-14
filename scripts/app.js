@@ -53,11 +53,46 @@ $(document).ready(function () {
     $("header ul").toggleClass('showing');
   })
 
-  // active navigation link
+  // active navigation link on click
   $('header ul li a').click(function () {
     $('header ul li a').removeClass("active");
     $(this).addClass("active");
-  });  
+  });
+
+  // active navigation link on scroll
+  $(window).on('scroll', function () {
+    var scrollPos = $(window).scrollTop() + 150;
+    var sections = [];
+
+    // Collect all sections and their positions
+    $('header ul li a').each(function () {
+      var target = $(this).attr('href');
+      if (target && target !== '#') {
+        var section = $(target);
+        if (section.length) {
+          sections.push({
+            link: $(this),
+            top: section.offset().top,
+            bottom: section.offset().top + section.outerHeight()
+          });
+        }
+      }
+    });
+
+    // Find the section that contains the current scroll position
+    var activeLink = null;
+    for (var i = sections.length - 1; i >= 0; i--) {
+      if (scrollPos >= sections[i].top) {
+        activeLink = sections[i].link;
+        break;
+      }
+    }
+
+    $('header ul li a').removeClass("active");
+    if (activeLink) {
+      activeLink.addClass("active");
+    }
+  });
 
 
 });
