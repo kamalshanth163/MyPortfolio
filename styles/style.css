@@ -562,26 +562,67 @@ footer {
 
 .contact-social {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
   margin-top: 28px;
 }
 
 .contact-social a {
-  color: rgba(241, 245, 249, 0.92);
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
+  min-width: 150px;
   padding: 12px 24px;
-  border: 1.5px solid rgba(241, 245, 249, 0.5);
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.22);
+  transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
 }
 
 .contact-social a:hover {
-  color: #ffffff;
-  background: rgba(241, 245, 249, 0.1);
-  border-color: rgba(241, 245, 249, 0.92);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.3);
+  filter: brightness(1.04);
+}
+
+.contact-social a.linkedin {
+  background: linear-gradient(135deg, #0a66c2, #004182);
+}
+
+.contact-social a.github {
+  background: linear-gradient(135deg, #111111, #2f2f2f);
+}
+
+.contact-social a.youtube {
+  background: linear-gradient(135deg, #ff0000, #c40000);
+}
+
+.contact-social a i {
+  font-size: 1rem;
+}
+
+.contact-social a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  transform: skewX(-22deg);
+  transition: left 420ms ease;
+}
+
+.contact-social a:hover::before {
+  left: 150%;
 }
 
 footer {
@@ -604,6 +645,7 @@ footer p {
   flex-direction: column;
   gap: 10px;
   z-index: 900;
+  color: white;
 }
 
 .social-links a {
@@ -612,17 +654,33 @@ footer p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.82);
-  color: var(--text);
+  color: #ffffff;
+  text-decoration: none;
   box-shadow: var(--shadow-soft);
-  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+  transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
 }
 
-.social-links a:hover {
+.social-links a:hover,
+.social-links a:focus-visible {
   transform: translateY(-2px);
-  background: var(--text);
-  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.social-links a.linkedin {
+  background: linear-gradient(135deg, #0a66c2, #004182);
+  color: white;
+}
+
+.social-links a.github {
+  background: linear-gradient(135deg, #111111, #2d2d2d);
+  color: white;
+}
+
+.social-links a.youtube {
+  background: linear-gradient(135deg, #ff0000, #c40000);
+  color: white;
 }
 
 .bold {
@@ -1376,15 +1434,29 @@ footer p {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: rgba(255, 255, 255, 0.92);
-  color: var(--text);
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.32);
   box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(10px);
+  transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
 }
 
 .social-links a:hover {
-  background: var(--text);
-  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  filter: brightness(1.06);
+}
+
+.social-links a.linkedin {
+  background: linear-gradient(135deg, #0a66c2, #004182);
+}
+
+.social-links a.github {
+  background: linear-gradient(135deg, #111111, #2f2f2f);
+}
+
+.social-links a.youtube {
+  background: linear-gradient(135deg, #ff0000, #c40000);
 }
 
 .bold {
@@ -1701,7 +1773,7 @@ body.theme-dark .contact-social a {
 
 body.theme-dark .contact-social a:hover {
   color: #e2e8f0;
-  background: rgba(226, 232, 240, 0.08);
+  /* background: rgba(226, 232, 240, 0.08); */
   border-color: rgba(226, 232, 240, 0.88);
 }
 
@@ -1710,7 +1782,18 @@ body.theme-dark footer p {
 }
 
 body.theme-dark .social-links a {
-  background: rgba(30, 41, 59, 0.86);
-  color: #e2e8f0;
+  color: #ffffff;
   border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+body.theme-dark .social-links a.linkedin {
+  background: linear-gradient(135deg, #0a66c2, #004182);
+}
+
+body.theme-dark .social-links a.github {
+  background: linear-gradient(135deg, #111111, #2f2f2f);
+}
+
+body.theme-dark .social-links a.youtube {
+  background: linear-gradient(135deg, #ff0000, #c40000);
 }
