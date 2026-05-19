@@ -36,11 +36,26 @@ $(document).ready(function () {
   
   // page section scrolling
   $(".menu-link").on('click', function(e) {
-    e.preventDefault();
     var target = $(this).attr('href');
-    $('html, body').animate({
-      scrollTop: ($(target).offset().top - 100)
-    }, 800);
+
+    if (!target || target.charAt(0) !== '#') {
+      return;
+    }
+
+    var section = $(target);
+    if (!section.length) {
+      return;
+    }
+
+    e.preventDefault();
+
+    var headerOffset = $('header').outerHeight() + 10;
+    var scrollPosition = Math.max(section.offset().top - headerOffset, 0);
+
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth'
+    });
   });
 
   // menu responsive toggle-button
