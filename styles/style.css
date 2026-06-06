@@ -1256,15 +1256,15 @@ footer {
 .personal-projects .card0 {
   grid-column: 1 / -1;
   padding: clamp(28px, 4vw, 40px);
-  border: 1px solid rgba(125, 211, 252, 0.72);
+  border: 1px solid rgba(96, 165, 250, 0.76);
   background:
-    radial-gradient(circle at top right, rgba(125, 211, 252, 0.78), transparent 45%),
-    radial-gradient(circle at bottom left, rgba(56, 189, 248, 0.5), transparent 52%),
-    linear-gradient(135deg, rgba(239, 246, 255, 0.97), rgba(224, 242, 254, 0.98));
+    radial-gradient(circle at top right, rgba(96, 165, 250, 0.8), transparent 45%),
+    radial-gradient(circle at bottom left, rgba(37, 99, 235, 0.52), transparent 52%),
+    linear-gradient(135deg, rgba(219, 234, 254, 0.97), rgba(191, 219, 254, 0.98));
   box-shadow:
-    0 14px 34px rgba(56, 189, 248, 0.28),
-    0 0 36px rgba(125, 211, 252, 0.26),
-    0 0 0 1px rgba(186, 230, 253, 0.9) inset;
+    0 14px 34px rgba(37, 99, 235, 0.3),
+    0 0 36px rgba(96, 165, 250, 0.28),
+    0 0 0 1px rgba(147, 197, 253, 0.9) inset;
 }
 
 .personal-projects .card0::before {
@@ -1281,6 +1281,35 @@ footer {
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(125, 211, 252, 0.82);
   color: #0f172a;
+}
+
+.project-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0 20px 0;
+}
+
+.project-link-button {
+  margin: 0;
+}
+
+.project-status-note {
+  margin: 0;
+  font-size: 0.84rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 720px) {
+  .project-cta-row {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .project-cta-row .button {
+    width: auto;
+  }
 }
 
 .projects .card::before,
@@ -1733,6 +1762,30 @@ body.theme-dark .projects .card,
 body.theme-dark .pro-projects .card-pro {
   background: rgba(15, 23, 42, 0.72);
   border-color: rgba(148, 163, 184, 0.2);
+}
+
+body.theme-dark .personal-projects .card0 {
+  border: 1px solid rgba(96, 165, 250, 0.76);
+  background:
+    radial-gradient(circle at top right, rgba(96, 165, 250, 0.8), transparent 45%),
+    radial-gradient(circle at bottom left, rgba(37, 99, 235, 0.52), transparent 52%),
+    linear-gradient(135deg, rgba(219, 234, 254, 0.97), rgba(191, 219, 254, 0.98));
+  box-shadow:
+    0 14px 34px rgba(37, 99, 235, 0.3),
+    0 0 36px rgba(96, 165, 250, 0.28),
+    0 0 0 1px rgba(147, 197, 253, 0.9) inset;
+}
+
+body.theme-dark .personal-projects .card0 h2,
+body.theme-dark .personal-projects .card0 p,
+body.theme-dark .personal-projects .card0 li {
+  color: #0f172a;
+}
+
+body.theme-dark .personal-projects .card0 .project-skills li {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(125, 211, 252, 0.82);
+  color: #0f172a;
 }
 
 body.theme-dark .about .detail h2,
